@@ -4,6 +4,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
+import lombok.extern.jackson.Jacksonized;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 
@@ -11,7 +12,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 @EqualsAndHashCode
 @ToString
 @Builder
-@JsonDeserialize
+@Jacksonized
 public class Person {
 
     private final String id;

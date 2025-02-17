@@ -5,12 +5,13 @@ import lombok.Getter;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import lombok.extern.jackson.Jacksonized;
 
 @Getter
 @EqualsAndHashCode
 @ToString
 @Builder
-@JsonDeserialize
+@Jacksonized
 public class BlogPost {
 
     private final String id;
