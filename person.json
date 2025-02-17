@@ -1,0 +1,23 @@
+[
+    {
+        "id": "p1",
+        "firstName": "Alice",
+        "lastName": "Smith",
+        "age": 30,
+        "gender": "Female"
+    },
+    {
+        "id": "p2",
+        "firstName": "Bob",
+        "lastName": "Johnson",
+        "age": 25,
+        "gender": "Male"
+    },
+    {
+        "id": "p3",
+        "firstName": "Charlie",
+        "lastName": "Brown",
+        "age": 30,
+        "gender": "Male"
+    }
+]
