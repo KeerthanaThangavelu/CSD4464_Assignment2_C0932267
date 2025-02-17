@@ -18,5 +18,10 @@
         "id": "b4",
         "authorId": "p3",
         "postContent": "Charlie's blog post about travel"
+    },
+    {
+        "id": "b4",
+        "authorId": "p99",
+        "postContent": "Invalid Author Case"
     }
 ]

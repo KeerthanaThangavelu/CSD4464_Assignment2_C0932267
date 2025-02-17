@@ -22,6 +22,20 @@ public class Main {
             return;
         }
 
+        List<String> knownAuthorIds = persons.stream()
+                .map(Person::getId)
+                .toList();
+
+        List<String> missingAuthorIds = blogPosts.stream()
+                .map(BlogPost::getAuthorId)
+                .filter(authorId -> !knownAuthorIds.contains(authorId))
+                .distinct()
+                .toList();
+
+        if (!missingAuthorIds.isEmpty()) {
+            System.out.println("Warning: The following author IDs in blogPosts.json do not exist in person.json: " + missingAuthorIds);
+        }
+
         Blog blog = new Blog(blogPosts, persons);
 
         int targetAge;
